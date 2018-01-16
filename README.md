@@ -1,0 +1,1 @@
+**A lockless queue for publishing "implementations of abstract" type messages using LMAX Disruptor** 
