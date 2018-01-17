@@ -1,2 +1,3 @@
-**A lockless queue for publishing implementations of "abstract-type" messages using LMAX Disruptor** 
-We can't instantiate constructor for abstract/generic type messages. LMAX Disruptor requires a factory method which instantiates a buffer of new instances of messages at the start of Disruptor itself. This API shows how to implement LMAX queue for generic-abstract type messages.  
+**A lockless queue for publishing "abstract-type" messages using LMAX Disruptor** 
+
+*We can't instantiate constructor for abstract type messages. LMAX Disruptor requires a factory design to instantiate instances of messages before the onset of Disruptor itself. There are situations when we don't know the exact message type, which we shall be queueing, except that its abstract type which can't be instantiated. This API shows how to implement LMAX queue for generic-abstract type messages.*  
